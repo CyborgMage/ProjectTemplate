@@ -52,27 +52,96 @@
         <h1>Please enter your details</h1>
         <p>In order to provide you with a quote, we need a few details. Please complete the form below. Thanks.</p>
 
-        <div class="row">
           <form class="form-horizontal">
+            
+            <div class="row">
 
             <div class="form-group">
               <label for="nameInput" class="control-label col-md-2">Name</label>
               <div class="col-md-4">
-                <input id="txtName" type="text" name="nameInput" class="form-control personalDetails" placeholder="Your Name" />
+                <input id="txtName" type="text" name="nameInput" class="form-control personalDetails" placeholder="Your name" />
               </div>
+          </div>
             </div>
 
-            <!-- The code for the remainder of the personal fields will be added here -->
+        <div class="row">
 
+            <div class="form-group">
+              <label for="ageInput" class="control-label col-md-2">Age</label>
+              <div class="col-md-4">
+                <input id="txtAge" type="number" name="ageInput" class="form-control personalDetails" placeholder="Your age"  />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+         
+         <div class="form-group">
+         <label for "genderInput" class="control-label col-md-2">Gender</label>
+         <div class="col-md-4">
+          <input id="genderM" type="radio" name="genderInput" class="personalDetails" value="m"> 
+          Male
+</input>
+          <input id="genderF" type="radio" name="genderInput" class="personalDetails" value="f">
+          Female
+        </input>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+
+  <div class="form-group">
+    <label for="townInput" class="control-label col-md-2">Town/City</label>
+    <div class="col-md-4">
+      <input id="txtTown" type="text" name="townInput" class="form-control personalDetails" placeholder="The town you currently live in" />
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="form-group">
+    <label for "mailInput" class="control-label col-md-2">Email address</label>
+    <div class="col-md-4">
+      <input id="txtMail" type="email" name="mailInput" class="form-control personalDetails" placeholder="Your email address" />
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="form-group">
+    <label for "claimsInput" class="control-label col-md-2">No claims bonus (years)</label>
+    <div class="col-md-4">
+      <select id="noclaims" name="claimsInput" class="form-control personalDetails">
+        <option disabled selected>Select</option>
+        <option>0</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5+</option>
+      </select>
+      </div>
+    </div>
+  </div>
+
+
+        </form>
+            
             <div class="form-group">
               <div class="col-md-4">
                 <input id="btnNext" value="Next" class="btn btn-default btn-sm btn-success" onclick="showCarDetails()" />
               </div>
             </div>
 
-          </form>
+        
         </div>
+
       </div>
+      
+
 
       <!-- WRAP CAR DETAILS FORM IN CHILD PANEL -->
       <div id="dvCarDetails" class="dvCarDetails">
